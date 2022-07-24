@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="Register.html" class="w3-button w3-bar-item">Home</a>
+  
+  <a href="viewfiles.html" class="w3-button w3-bar-item">view files</a>
+
+  <a href="#Authorization" class="w3-button w3-bar-item">Lougout</a>
+</nav>
+<marquee class="marq" bgcolor = "Green" direction = "Right" loop=""> <h1>E-approval SystemThank you for your interest in [Agency]. We’ve worked with many companies that have struggled with [Key Challenge]. You can read up on the successes of our previous relationships here [Link] and here [Link].</h1></marquee>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="e.jpg"style="width:100%">
+  <img class="mySlides" src="h1.jpg" style="width:100%">
+  <img class="mySlides" src="hh.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+

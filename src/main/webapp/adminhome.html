@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="Register.jsp" class="w3-button w3-bar-item">Home</a>
+  <a href="adminlogin.jsp" class="w3-button w3-bar-item">Add employee</a>
+  <a href="viewdetails.html" class="w3-button w3-bar-item">View employee</a>
+  <a href="Login.jsp" class="w3-button w3-bar-item">Logout</a>
+  
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://images.unsplash.com/photo-1624633022679-f790cc44a517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" style="width:70%">
+  <img class="mySlides" src="img_band_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
